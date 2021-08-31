@@ -20,11 +20,11 @@ You will need Python with the following packages installed:
 
 ### Usage:
 Although the code can handle many options via different flags, there are only two mandatory inputs for the code. The first is the input `.gro` file and second is the type of the water model
-(either a 3-point or 4-point). After moving to the folder where the f4time.py code exists, the basic command to run the code looks as below:
+(either a 3-point or 4-point). After moving to the folder where the f4spc.py code is located, the basic command to run the code looks like following:
 
 `$ python f4spc.py -i input.gro -wm (3 or 4)`
 
-The `-i` flag identifies the .gro file to be processed by the code, and the `-wm` flag identifies the type of the water-model. The `-wm` flag can get integers 3 or 4. The integer 3 refers  the three-site water model arranged as OHH in the .gro file, while in the four-site water model the atoms of a water molecule are arranged as OHHM. Where m is the imaginary particle
+The `-i` flag identifies the .gro file to be processed by the code, and the `-wm` flag identifies the type of the water-model. The `-wm` flag can be followed by the integers 3 or 4. The integer 3 refers  the three-site water model arranged as OHH in the .gro file, while in the four-site water model the atoms of a water molecule are arranged as OHHM. Where m is the imaginary particle
 
 
 
