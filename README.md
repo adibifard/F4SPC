@@ -3,7 +3,7 @@
 
 The Python code `f4spc.py` calculates the F4 structural order parameter between the water molecules using the .gro trajectory file as its input. The code can be applied over both three-point and four-point water models. The user provides the input `.gro` file and the type of the water model; then, the output [time,F4] data are written into a comma-separated `.csv` file. In its default settings, the code grabs the time data form the input `.gro` file. However, if the input file lacks the simulation time data, the code is still able to roughly reconstrtuct the time data if the user provides the following data to the code:
 
-- Simulation time-step [femtoseconds]
+- Simulation time-step [femtoseconds (fs)]
 - Dumping frequency
 - Stride
 - Ouput time unit [picoseconds (ps), nanoseconds (ns) or microseconds (ms)]
