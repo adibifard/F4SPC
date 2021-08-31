@@ -14,14 +14,13 @@ You need Python with the following packages installed:
 * CSV
 * Argparse
 
-<span class="icon icon-device-desktop"></span>
 
 ### Usage:
 Although the code can get many options via different commands, there are only two mandatory inputs for the code to work. First is the address of the .gro file and second is the type of the water model
 (a 3-point or 4-point model). After moving to the folder where the f4time.py code exists, the basic command to run the code looks as below:
 
 $ python f4time.py -i input.gro -wm (3 or 4)
-
+\\
 The -i flag identifies the input .gro file to be processed by the Python code, and the -wm flag identifies the type of the water-model. The flag -wm can be fed either with an integer 3 or 4, where 3
 indicates the three-site water model arranged as OHH in the .gro file, while in the four-site water model the atoms of a water molecule are arranged as OHHM. Where m is the imaginary particle
 
@@ -30,13 +29,13 @@ indicates the three-site water model arranged as OHH in the .gro file, while in 
 ---------------------------------------------------------------------------------------------------------------------
 ### Options:
 
--i  [<.gro>]      (input)
+-i  [<.gro>]      (input)\\
  the .gro trajectory file
 
--wm <int>   (3 or 4)   (water model)
+-wm <int>   (3 or 4)   (water model)\\
  the type of the water model (3-point or 4-point model)
 
--out  [<.csv>]    (output)
+-out  [<.csv>]    (output)\\
  the output [t,F4] data saved as a .csv file. If not assigned, a .csv file will be created with its name duplicated form the input .gro file.
 
 -ws   <string>    (water substrate)
