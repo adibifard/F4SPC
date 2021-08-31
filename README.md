@@ -47,14 +47,16 @@ The `-i` flag identifies the .gro file to be processed by the code, and the `-wm
 
 `-t    <float>  <float>  <float>   (time-step (fs), dump frequency, stride)`
 
- If this command is ignored, then the code reads the time data from the input .gro file. On the other hand, if this flag is activated, one needs to provide the time-step, the dumping frequency, and the stride used to generate the .gro trajectory file.
+ If this command is ignored, then the code reads the time data from the input `.gro` file. On the other hand, if this flag is used, one needs to provide the time-step, the dumping frequency, and the stride values used in generation of the `.gro` file process.
 
 
- This is suited well for the .gro files that are exported from VMD but lack time data. The time-step can be found in the simulation input file, and the "dump frequency" defines how frequently the atom trajectories were written into the trajectory file. Stride is another filter to the trajectory file when user exports the loaded trajectory in VMD to a .gro file.   
+ This is well suited  for the `.gro` files that are exported from ```diff
+ - VMD (Visual Molecular Dynamics)
+ ```post-processor but lack the time data. The time-step can be found in the simulation input file, and the "dump frequency" defines how frequently the atom trajectories were written into the trajectory file. Stride is another filter to the trajectory file when user exports the loaded trajectory in VMD to a `.gro` file.
 
-`-tu   <string>    (User defined time units [ps or ns or ms])`
+`-tu   <string>    (User defined time unit [ps or ns or ms])`
 
-This flag is only required in conjunction with the "-t" flag. This defines the unit of the output time vector written to the output file, assuming the simulation was done in femtosecond timesteps.
+This flag is only required in conjunction with the `-t` flag. This defines the unit of the output time vector written to the `.csv` file, assuming the simulation was done in femtosecond timesteps.
 
 
 #### Authors:
