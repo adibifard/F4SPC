@@ -14,6 +14,7 @@ You need Python with the following packages installed:
 * CSV
 * Argparse
 
+<span class="icon icon-device-desktop"></span>
 
 ### Usage:
 Although the code can get many options via different commands, there are only two mandatory inputs for the code to work. First is the address of the .gro file and second is the type of the water model
@@ -26,7 +27,7 @@ indicates the three-site water model arranged as OHH in the .gro file, while in 
 
 
 
-
+---------------------------------------------------------------------------------------------------------------------
 ### Options:
 
 -i  [<.gro>]      (input)
@@ -49,7 +50,7 @@ indicates the three-site water model arranged as OHH in the .gro file, while in 
  This is suited well for the .gro files that are exported from VMD but lack time information. The time-step can be found in the simulation data file, the "dump frequency" is also found in the input file to the simulator and indicates the number of time-steps before dumping the trajectory of the atoms, the stride is another filter to the dumped data and is accessible when the user exports the .gro file using VMD.
 
 -tu   <string>    (User defined time units)
- This flag is optional unless you opt to use the flag "-t". Thus, this flag is only required in conjunction with the "-t" flag. 
+ This flag is optional unless you opt to use the flag "-t". Thus, this flag is only required in conjunction with the "-t" flag.
 
 
 #### Authors:
