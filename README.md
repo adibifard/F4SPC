@@ -58,11 +58,11 @@ The `-i` flag identifies the .gro file to be processed by the code, and the `-wm
 
  This is well suited  for the `.gro` files that are exported from
   VMD (Visual Molecular Dynamics)
- post-processor but lack the time data. The time-step can be found in the simulation input file, and the "dump frequency" defines how frequently the atom trajectories were written into the trajectory file. Stride is another filter to the trajectory file when user exports the loaded trajectory in VMD to a `.gro` file.
+ post-processor but lack the time data. The time-step can be found in the simulation input file, and the "dump frequency" defines how frequently the atom trajectories are written into the trajectory file. Stride is another filter to the trajectory file when user exports the loaded trajectory in VMD to a `.gro` file.
 
 `-tu   <string>    (User defined time unit [ps or ns or ms])`
 
-This flag is only required in conjunction with the `-t` flag. This defines the unit of the output time vector written to the `.csv` file, assuming the simulation was done in femtosecond timesteps.
+This flag is only required in conjunction with the `-t` flag, and defines the unit of the output time vector written to the `.csv` file, assuming that the simulation was performed in femtosecond timesteps.
 
 
 #### Authors:
