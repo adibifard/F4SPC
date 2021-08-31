@@ -41,24 +41,22 @@ The `-i` flag identifies the .gro file to be processed by the code, and the `-wm
 
 `-out  [<.csv>]    (output)`
 
- The output [t,F4] data saved as a .csv file. If not assigned, a .csv file will be created with its name duplicated form the input .gro file.
+ The output  `.csv` file holding the tabulated [t,F4] data series. If not assigned, a `.csv` file will be created with the same name as the input `.gro` file.
 
-`-ws   <string>    (water substrate)`
+`-ws   <string>    (water residue name in the .gro file)`
 
  The name of the water substrate in the .gro file, default="SOL".
 
 `-rh   <float>      (nm)`
 
- The threshold radius for hydrogen-bonded molecules.
+ The threshold radius for hydrogen-bonded molecules, default=0.3 nm.
 
-`-t    <float>  <float>  <float>   (time-step (fs), dump frequency, stride)`
+`-t    <float>  <float>  <float>   (time-step (fs), dumping frequency, stride)`
 
- If this command is ignored, then the code reads the time data from the input `.gro` file. On the other hand, if this flag is used, one needs to provide the time-step, the dumping frequency, and the stride values used in generation of the `.gro` file process.
+ If this command is ignored, then the code reads the time data from the input `.gro` file. On the other hand, utilizing this flag, one will need to provide the time-step, the dumping frequency, and the stride values used in the generation process of the `.gro` file.
 
 
- This is well suited  for the `.gro` files that are exported from
-  VMD (Visual Molecular Dynamics)
- post-processor but lack the time data. The time-step can be found in the simulation input file, and the "dump frequency" defines how frequently the atom trajectories are written into the trajectory file. Stride is another filter to the trajectory file when user exports the loaded trajectory in VMD to a `.gro` file.
+ This is well suited  for the `.gro` files that are exported from VMD (Visual Molecular Dynamics) post-processor but lack the time data. The time-step can be found in the simulation input file, and the "dumping frequency" defines how frequently the trajectories are written into the simulation output. Stride is another filter to the trajectory file when user imports the simulation trajectory into VMD and exports it to a `.gro` file.
 
 `-tu   <string>    (User defined time unit [ps or ns or ms])`
 
