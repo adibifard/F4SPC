@@ -19,8 +19,8 @@ You will need Python with the following packages installed:
 
 
 ### Usage:
-Although the code can get many options via different commands, there are only two mandatory inputs for the code to work. First is the address of the .gro file and second is the type of the water model
-(a 3-point or 4-point model). After moving to the folder where the f4time.py code exists, the basic command to run the code looks as below:
+Although the code can handle many options via different flags, there are only two mandatory inputs for the code. The first is the input `.gro` file and second is the type of the water model
+(either a 3-point or 4-point). After moving to the folder where the f4time.py code exists, the basic command to run the code looks as below:
 
 `$ python f4spc.py -i input.gro -wm (3 or 4)`
 
