@@ -1,7 +1,7 @@
 ## F4 Structural Parameter Calculator (F4SPC)
 **version 1.00**
 
-The Python code `f4spc.py` calculates the F4 structural order parameter between the water molecules using the .gro trajectory file as its input. The code can be applied over both three-point and four-point water models. The user provides the input `.gro` file and the type of the water model; then, the output [time,F4] data are written into a comma-separated `.csv` file. In its default settings, the code grabs the time data form the input `.gro` file. However, if the input file lacks the simulation time data, the code is still able to roughly reconstrtuct the time data if the user provides the following data to the code:
+The Python code `f4spc.py` calculates the F4 structural order parameter between the water molecules giving the `.gro` trajectory file as its input. In its current version, the code can run with both three-site and four-site water models. The user provides the input `.gro` file and the type of the water model. Subsequently, the output (time,F4) data are written into a comma-separated `.csv` file. In its default settings, the code also elicits the time data form the input `.gro` file. However, if the input file lacks the information regarding the simulation time, the code might still be able to approximate the time series given the following parameters:
 
 - Simulation time-step [femtoseconds (fs)]
 - Dumping frequency
@@ -17,10 +17,9 @@ You will need Python with the following packages installed:
 * CSV
 * Argparse
 
-
 ### Usage:
 Although the code can handle many options via different flags, there are only two mandatory inputs for the code. The first is the input `.gro` file and second is the type of the water model
-(either a 3-point or 4-point). After moving to the folder where the f4spc.py code is located, the basic command to run the code looks like following:
+(either a 3-point or 4-point). After moving to the folder where the f4spc.py code is located, the basic command to run the code comes like following:
 
 `$ python f4spc.py -i input.gro -wm (3 or 4)`
 
@@ -41,11 +40,11 @@ The `-i` flag identifies the .gro file to be processed by the code, and the `-wm
 
 `-out  [<.csv>]    (output)`
 
- The output  `.csv` file holding the tabulated [t,F4] data series. If not assigned, a `.csv` file will be created with the same name as the input `.gro` file.
+ The output  `.csv` file holding the tabulated [t,F4] data. If not assigned, a `.csv` file will be created with the same name as the input `.gro` file.
 
 `-ws   <string>    (water residue name in the .gro file)`
 
- The name of the water substrate in the .gro file, default="SOL".
+ The name of the water residue in the `.gro` file, default="SOL".
 
 `-rh   <float>      (nm)`
 
@@ -62,6 +61,8 @@ The `-i` flag identifies the .gro file to be processed by the code, and the `-wm
 
 This flag is only required in conjunction with the `-t` flag, and defines the unit of the output time vector written to the `.csv` file, assuming that the simulation was performed in femtosecond timesteps.
 
+### Examples:
+There are three
 
 #### Authors:
 ### Meisam Adibifard, madibi1@lsu.edu, me.adibifard@gmail.com
