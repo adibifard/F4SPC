@@ -19,7 +19,7 @@ You will need Python with the following packages installed:
 * CSV
 * Argparse
 
-### Usage:
+### Basic Usage:
 Although the code can handle many options via different flags, there are only two required inputs for the code to function. The first is the input `.gro` file and second is the type of the water model. After moving to the folder where the `f4spc.py` file is located, the simplest command to run the code is as below:
 
 `$ python f4spc.py -i <input.gro> -wm <3 or 4>`
@@ -55,17 +55,17 @@ The `-i` flag identifies the .gro file to be processed by the code, and `-wm` id
  If this command is ignored, then the code reads the time data from the input `.gro` file. Using this flag, on the other hand, one will need to provide the time-step, the dumping frequency, and the stride values which were used in the generation process of the `.gro` file.
 
 
- This is well suited  for the trajectory files that are exported from VMD (Visual Molecular Dynamics) or any other post-processor but lack any  time related information. The time-step can be found in the simulation input file, and the "dumping frequency" defines how frequently the trajectories were written into the simulation trajectory file. Stride is merely another filter to the trajectory file when user imports the simulation trajectory into VMD and exports it to a `.gro` file.
+ This is well suited  for the trajectory files that are exported from VMD (Visual Molecular Dynamics) or any other post-processor but lack any  time related information. The time-step can be found in the simulation input file, the "dumping frequency" defines how frequently the trajectories were written into the simulation trajectory file, and the stride is simply another filter to the trajectory file when user imports the simulation trajectory into VMD and exports it to a `.gro` file.
 
 `-tu   <string>    (User defined time unit [ps or ns or ms])`
 
-This flag is only required in conjunction with the `-t` flag and defines the unit of the output time vector written to the `.csv` file, assuming that the simulation was performed in femtosecond timesteps.
+This flag is required only in conjunction with the `-t` flag and defines the unit of the output time vector written to the `.csv` file, assuming that the simulation was performed in femtosecond timesteps.
 
 ---------------------------------------------------------------------------------------------------------------------
 ### Examples:
 There are three sample `.gro` files under the folder `/Examples` in the repository, for which the exactitude of the code can be verified with. The descriptions for the files are provided following:
 
-1. `2b2sII.gro`: This is a single-time trajectory file of type-II gas hydrates. As it is a single-time trajectory, it does not hold the simulation time data, and so the output `.csv` file should only contain a single-point F4 value.
+1. `typeII_Hydrate.gro`: This is a single-time trajectory file of type-II gas hydrates. As it is a single-time trajectory, it does not hold the simulation time data, and the output `.csv` file would only contain a single-point F4 value. This is a four-site (OHHM) water model.
 2. `test.gro`:
 3. `2_5nm_rest1_fr125002.gro`:
 
