@@ -63,14 +63,16 @@ This flag is required only in conjunction with the `-t` flag and defines the uni
 
 ---------------------------------------------------------------------------------------------------------------------
 ### Examples:
-There are three sample `.gro` files under the folder `/Examples` in the repository, for which the exactitude of the code can be verified with. The descriptions for the files are provided following:
+There are three sample `.gro` files under the folder `Examples` in the repository, for which the exactitude of the code can be verified with. The descriptions for the files are provided following:
 
 1. `typeII_Hydrate.gro`: This is a single-time trajectory file of type-II gas hydrates. As it is a single-time trajectory, it does not hold the simulation time data, and the output `.csv` file would only contain a single-point F4 value. This is a four-site (OHHM) water model. The command line script to run this example is as below:
 
 `$ python f4spc.py -i Examples/typeII_Hydrate.gro -wm 4`
+
 2. `test.gro`:
 
 `$ python f4spc.py -i Examples/test.gro -wm 4`
+
 3. `2_5nm_rest1_fr125002.gro`:
 
 #### Authors:
