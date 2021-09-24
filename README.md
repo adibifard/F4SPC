@@ -77,6 +77,3 @@ There are three sample `.gro` files under the folder `Examples` in the repositor
 
 #### Authors:
 ### Meisam Adibifard, madibi1@lsu.edu, me.adibifard@gmail.com
-
-#### PI:
-### Olufemi Olorode, folorode@lsu.edu
