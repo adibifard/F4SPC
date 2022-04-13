@@ -20,7 +20,7 @@ You will need Python with the following packages installed:
 * Argparse
 
 ### Basic Usage:
-Although the code can handle many options via different flags, there are only two required inputs for the code to function. The first is the input `.gro` file and second is the type of the water model. After moving to the folder where the `f4spc.py` file is located, the simplest command to run the code is as below:
+Although the code can handle different options via different flags, there are only two required inputs for the code to function. The first is the input `.gro` file and second is the type of the water model. The simplest command to run the code, after navigating to the folder where the file `f4spc.py` is located,  is as below:
 
 `$ python f4spc.py -i <input.gro> -wm <3 or 4>`
 
