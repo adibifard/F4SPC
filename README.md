@@ -38,7 +38,7 @@ The `-i` flag identifies the .gro file to be processed by the code, and `-wm` id
 
  The type of the water model (3 or 4 site model).
 
-`-out  [<.csv>]    (output)`
+`-o  [<.csv>]    (output)`
 
  The output  `.csv` file containing the [t,F4] time series. If not assigned, a `.csv` file will be created with the same name as the input `.gro` file.
 
